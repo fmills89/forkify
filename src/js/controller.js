@@ -18,6 +18,10 @@ const controlRecipes = async function () {
     if (!id) return;
 
     recipeView.renderSpinner();
+
+    // update results view to mark selected search results
+    resultsView.update(model.getSearchResultsPage());
+
     // 1) Loading recipe
     await model.loadRecipe(id);
 
@@ -56,7 +60,8 @@ const controlPagination = function (goToPage) {
 const controlServings = function (newServings) {
   model.updateServings(newServings);
 
-  recipeView.render(model.state.recipe);
+  // update method will only update text and attri in the DOM w/o re-rendering entier view
+  recipeView.update(model.state.recipe);
 };
 
 const init = function () {
