@@ -85,9 +85,9 @@ const controlBookmarks = function () {
 };
 
 const controlAddRecipe = function (newRecipe) {
-  console.log(newRecipe);
-
+  // console.log(newRecipe);
   // upload new recipe
+  model.uploadRecipe(newRecipe);
 };
 
 const init = function () {
