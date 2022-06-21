@@ -24,6 +24,7 @@
     <li><a href="#installation">Installation</a></li>
     <li><a href="#usage">Usage</a></li>
     <li><a href="#license">License</a></li>
+    <li><a href="#deployment">Deployment</a></li>
     <li><a href="#contact">Contact</a></li>
   </ol>
 </details>
@@ -73,6 +74,9 @@ Fork or clone this repo.
 
 ## License
    * MIT
+
+## Deployment
+Deployed using <a href='https://www.netlify.com/'>Netlify</a>.
 
 ## Contact
 **Got questions?**
